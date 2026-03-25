@@ -1,7 +1,7 @@
 maintainer="Bart Ribbers <bribbers@disroot.org>"
 pkgname=frei0r-plugins
 pkgver=2.4.0
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="A minimalistic plugin API for video sources and filters"
 url="https://frei0r.dyne.org/"
 arch="all"
@@ -32,7 +32,6 @@ package() {
     DESTDIR="$pkgdir" cmake --install build
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 4dc8a7b127e9991d276e40ac8869069b1b97e32531c30d8ec1d5644409ab8e381f1a128dd3bbafda26d7efb445586d5133a81da1bb3c3374a1bf351d51a493df  frei0r-plugins-2.4.0.tar.gz
 "
